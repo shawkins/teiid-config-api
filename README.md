@@ -1,1 +1,1 @@
-# teiid-config-api
+# Teiid Configuration API
