@@ -1,6 +1,9 @@
 targt 
 *.iml
 *.idea
-
+.classpath
+.project
+.settings
+.checkstyle
 target
 .DS_Store
