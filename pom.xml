@@ -4,14 +4,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.wildfly.swarm</groupId>
+    <groupId>io.thorntail</groupId>
     <artifactId>config-api-parent</artifactId>
-    <version>1.3.0</version>
+    <version>1.4.0</version>
   </parent>
 
 
   <artifactId>teiid-config-api</artifactId>
-  <version>1.1.3.Final-SNAPSHOT</version>
+  <version>1.2.0.Final-SNAPSHOT</version>
 
   <packaging>jar</packaging>
 
@@ -20,15 +20,15 @@
   </properties>
 
   <scm>
-    <connection>scm:git:git@github.com:wildfly-swarm/teiid-config-api.git</connection>
-    <developerConnection>scm:git:git@github.com:wildfly-swarm/teiid-config-api.git</developerConnection>
-    <url>https://github.com/wildfly-swarm/teiid-config-api</url>
+    <connection>scm:git:git@github.com:thorntail/teiid-config-api.git</connection>
+    <developerConnection>scm:git:git@github.com:thorntail/teiid-config-api.git</developerConnection>
+    <url>https://github.com/thorntail/teiid-config-api</url>
     <tag>HEAD</tag>
   </scm>
 
   <dependencies>
     <dependency>
-      <groupId>org.wildfly.swarm</groupId>
+      <groupId>io.thorntail</groupId>
       <artifactId>config-api-runtime</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
@@ -40,11 +40,10 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>${version.junit}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.wildfly.swarm</groupId>
+      <groupId>io.thorntail</groupId>
       <artifactId>config-api-generator</artifactId>
       <version>${project.parent.version}</version>
       <scope>test</scope>
@@ -58,7 +57,7 @@
         <version>1.4.0</version>
         <dependencies>
           <dependency>
-            <groupId>org.wildfly.swarm</groupId>
+            <groupId>io.thorntail</groupId>
             <artifactId>config-api-generator</artifactId>
             <version>${project.parent.version}</version>
           </dependency>
@@ -153,7 +152,7 @@
               <artifactId>teiid</artifactId>
               <version>${version.teiid}</version>
               <classifier>wildfly-server</classifier>
-              <packaging>zip</packaging> 
+              <packaging>zip</packaging>
               <server-config>standalone-teiid.xml</server-config>
             </configuration>
           </execution>
